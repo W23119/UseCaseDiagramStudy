@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+package el-Campus{
+  usecase "アカウントを作る" as a
+  usecase "ログインする" as b
+}
+:生徒: --> a
+:生徒: --> b
+:教師: --> b
+@enduml
